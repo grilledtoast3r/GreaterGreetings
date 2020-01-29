@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ggprototype_v2">
     <!-- Camera Permissions Required -->
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- arcore required -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- arcore required permission -->
     <uses-feature
         android:name="android.hardware.camera.ar"
-        android:required="true" />
+        android:required="true" /> <!--arcore requires an AR compatible camera to be available on device -->
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,7 @@
         <!-- Added for arcore -->
         <meta-data
             android:name="com.google.ar.core"
-            android:value="required" />
+            android:value="required" /> <!--required data for arcore-->
 
         <activity android:name=".MainActivity">
             <intent-filter>
