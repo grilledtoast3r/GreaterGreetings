@@ -94,6 +94,7 @@
       file: "Sampledata/model.obj",
       name: "model",
       recenter: "root",
+      scale: 0.16,
    },
    version: "0.52:1",
 }

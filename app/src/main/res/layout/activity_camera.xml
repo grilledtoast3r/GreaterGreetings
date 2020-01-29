@@ -6,10 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".CameraActivity">
 
+    <!-- AR fragment -->
     <fragment
         android:id="@+id/ux_fragment"
-        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:name="com.example.ggprototype_v2.CustomArFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <!-- User assistance image  -->
+    <ImageView
+        android:id="@+id/image_view_fit_to_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        android:src="@drawable/fit_to_scan"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
