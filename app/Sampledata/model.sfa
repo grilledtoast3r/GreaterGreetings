@@ -9,13 +9,13 @@
          name: "mat24",
          parameters: [
             {
-               baseColor: null,
+               baseColor: true,
             },
             {
                baseColorTint: [
-                  0.92000000000000004,
-                  0.94999999999999996,
-                  0.93999999999999995,
+                  1,
+                  1,
+                  1,
                   1,
                ],
             },
@@ -35,13 +35,13 @@
          name: "mat12",
          parameters: [
             {
-               baseColor: null,
+               baseColor: true,
             },
             {
                baseColorTint: [
                   1,
                   0.92000000000000004,
-                  0.23000000000000001,
+                  1,
                   1,
                ],
             },
@@ -61,7 +61,7 @@
          name: "mat21",
          parameters: [
             {
-               baseColor: null,
+               baseColor: true,
             },
             {
                baseColorTint: [
@@ -94,7 +94,7 @@
       file: "Sampledata/model.obj",
       name: "model",
       recenter: "root",
-      scale: 0.16,
+      scale: 1.26,
    },
    version: "0.52:1",
 }

@@ -8,7 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
-        classpath 'com.google.ar.sceneform:plugin:1.13.0'    //Added For arcore
+        classpath 'com.google.ar.sceneform:plugin:1.15.0'    //Added For arcore
 
         //!!! important AR Core note: version here must be kept up to date along with
         // the dependency in build.gradle (moudle)
