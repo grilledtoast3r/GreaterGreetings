@@ -98,9 +98,6 @@ public class CameraActivity extends AppCompatActivity implements Scene.OnUpdateL
                         textView.setText("flowers is visible");
                         break;
                 }
-                /*if (image.getName().equals("brother")) {
-
-                }*/
             }
         }
     }
@@ -115,11 +112,23 @@ public class CameraActivity extends AppCompatActivity implements Scene.OnUpdateL
                         .build()
                         .thenAccept(modelRenderable -> placeModel(modelRenderable, anchor));
                 break;
+            case "dog":
+                ModelRenderable.builder()
+                        .setSource(this, Uri.parse("Mesh_Beagle.sfb"))
+                        .build()
+                        .thenAccept(modelRenderable -> placeModel(modelRenderable, anchor));
+                break;
 
+            case "cat":
+                ModelRenderable.builder()
+                        .setSource(this, Uri.parse("Mesh_Kitten.sfb"))
+                        .build()
+                        .thenAccept(modelRenderable -> placeModel(modelRenderable, anchor));
+                break;
             default:
-                Toast.makeText(this, "Error: no model was called", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Error: no model was called or Incorrect model name was passed", Toast.LENGTH_LONG).show();
 
-                System.out.println("Error: no model was called. Expected: lower case string mathcing a model.sfb file. Received: "+ selection  );
+                System.out.println("Error: no model was called. Expected: lower case string matching a model.sfb file. Received: "+ selection  );
         }
 
 

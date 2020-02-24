@@ -50,7 +50,12 @@ apply plugin: "com.google.ar.sceneform.plugin"
 //3D model assets
 
 
-sceneform.asset('Sampledata/model.obj',
+sceneform.asset('Sampledata/Mesh_Kitten.obj',
         'default',
-        'Sampledata/model.sfa',
-        'src/main/assets/model')
+        'Sampledata/Mesh_Kitten.sfa',
+        'src/main/assets/Mesh_Kitten')
+
+sceneform.asset('Sampledata/Mesh_Beagle.obj',
+        'default',
+        'Sampledata/Mesh_Beagle.sfa',
+        'src/main/assets/Mesh_Beagle')
