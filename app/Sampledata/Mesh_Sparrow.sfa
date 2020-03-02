@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'lambert2SG',
+      parameters: [
+        {
+          baseColor: 'Tex_Sparrow',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'Sampledata/Mesh_Sparrow.obj',
+    name: 'Mesh_Sparrow',
+    recenter: 'root',
+    scale: 0.0040209000000000002,
+  },
+  samplers: [
+    {
+      file: 'Sampledata\\Tex_Sparrow.png',
+      name: 'Tex_Sparrow',
+      pipeline_name: 'Tex_Sparrow.png',
+    },
+  ],
+  version: '0.54:2',
+}

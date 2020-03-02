@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*
+    * Method for changing activity
+    * */
     public void openCameraActivity(){
         Intent intent = new Intent(this, CameraActivity.class);
         startActivity(intent);

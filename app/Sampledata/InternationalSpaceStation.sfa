@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'InternationalSpaceStation_mat',
+      parameters: [
+        {
+          baseColor: 'InternationalSpaceStation_BaseColor',
+        },
+        {
+          baseColorTint: [
+            0.5,
+            0.5,
+            0.5,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'Sampledata/InternationalSpaceStation.obj',
+    name: 'InternationalSpaceStation',
+    recenter: 'root',
+    scale: 0.0091745899999999999,
+  },
+  samplers: [
+    {
+      file: 'Sampledata\\InternationalSpaceStation_BaseColor.png',
+      name: 'InternationalSpaceStation_BaseColor',
+      pipeline_name: 'InternationalSpaceStation_BaseColor.png',
+    },
+  ],
+  version: '0.54:2',
+}
