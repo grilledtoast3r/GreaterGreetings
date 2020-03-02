@@ -59,3 +59,20 @@ sceneform.asset('Sampledata/Mesh_Beagle.obj',
         'default',
         'Sampledata/Mesh_Beagle.sfa',
         'src/main/assets/Mesh_Beagle')
+
+
+
+sceneform.asset('Sampledata/InternationalSpaceStation.obj',
+        'default',
+        'Sampledata/InternationalSpaceStation.sfa',
+        'src/main/assets/InternationalSpaceStation')
+
+sceneform.asset('Sampledata/GlassOfBeer.obj',
+        'default',
+        'Sampledata/GlassOfBeer.sfa',
+        'src/main/assets/GlassOfBeer')
+
+sceneform.asset('Sampledata/Mesh_Sparrow.obj',
+        'default',
+        'Sampledata/Mesh_Sparrow.sfa',
+        'src/main/assets/Mesh_Sparrow')
