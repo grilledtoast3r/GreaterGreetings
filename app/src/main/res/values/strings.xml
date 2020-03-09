@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">GGprototype_v2</string>
+    <!--Reminders Page Text-->
+    <string name="no_remindersSet">You don\'t have any reminders for upcoming occasions! \n
+    Don\'t panic to get started tap the add button \"\+\" below.</string>
+
+    <!--Add Reminder Page Text-->
+    <string name="add_reminder">Add Reminder</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_no">Repeat</string>
+    <string name="repeat_type">Repetition Interval</string>
+
+
 </resources>
