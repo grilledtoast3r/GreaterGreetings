@@ -12,6 +12,7 @@
     <string name="repeat">Repeat</string>
     <string name="repeat_no">Repeat</string>
     <string name="repeat_type">Repetition Interval</string>
-
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 
 </resources>
