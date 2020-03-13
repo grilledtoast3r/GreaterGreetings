@@ -62,7 +62,7 @@
                 android:textSize="15dp"
                 android:gravity="center_vertical"
                 android:layout_marginStart="72dp"
-                android:textColor="@color/mdtp_transparent_black"
+                android:textColor="@color/black"
                 android:layout_height="72dp"/>
 
             <RelativeLayout
@@ -298,7 +298,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
+       <!-- <LinearLayout
             android:id="@+id/cancelSave"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -315,7 +315,7 @@
                 android:textColor="@color/mdtp_transparent_black"
                 android:layout_height="72dp"/>
 
-        </LinearLayout>
+        </LinearLayout>-->
 
 
     </ScrollView>
