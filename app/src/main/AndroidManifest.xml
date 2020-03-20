@@ -40,6 +40,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--Added for reminder Feature-->
+        <provider
+            android:authorities="com.example.ggprototype_v2"
+            android:name=".data.AlarmReminderProvider"
+            android:exported="false"/>
+        <!--Added for reminder Feature-->
+
+        <service
+            android:name=".reminder.ReminderAlarmService"
+            android:exported="false"/>
     </application>
 
 </manifest>

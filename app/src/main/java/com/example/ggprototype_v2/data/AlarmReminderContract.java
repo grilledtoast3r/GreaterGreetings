@@ -10,7 +10,7 @@ public class AlarmReminderContract {
 
     private AlarmReminderContract() {}
 
-    public static final String CONTENT_AUTHORITY = "com.example.ggprototype_v2.alarmreminder";
+    public static final String CONTENT_AUTHORITY = "com.example.ggprototype_v2";
 
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
