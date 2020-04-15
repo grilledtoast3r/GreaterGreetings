@@ -43,13 +43,21 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Added for Reminder Feature
+    implementation 'com.android.support:design:28.3.1'
+    implementation 'com.android.support:recyclerview-v7:28.3.1'
+    implementation 'com.getbase:floatingactionbutton:1.9.0'
+    implementation 'com.wdullaer:materialdatetimepicker:1.2.1'
+    implementation 'com.bignerdranch.android:recyclerview-multiselect:+'
+    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
 }
 //added for arcore
 apply plugin: "com.google.ar.sceneform.plugin"
 
 //3D model assets
-
-
 sceneform.asset('Sampledata/Mesh_Kitten.obj',
         'default',
         'Sampledata/Mesh_Kitten.sfa',
@@ -59,7 +67,6 @@ sceneform.asset('Sampledata/Mesh_Beagle.obj',
         'default',
         'Sampledata/Mesh_Beagle.sfa',
         'src/main/assets/Mesh_Beagle')
-
 
 
 sceneform.asset('Sampledata/InternationalSpaceStation.obj',

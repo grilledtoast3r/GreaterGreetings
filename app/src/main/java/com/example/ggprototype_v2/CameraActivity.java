@@ -28,6 +28,12 @@ public class CameraActivity extends AppCompatActivity implements Scene.OnUpdateL
     private CustomArFragment arFragment;
     private TextView textView;
 
+    private Boolean beer = false;
+    private Boolean spacestation = false;
+    private Boolean cat = false;
+    private Boolean dog = false;
+    private Boolean sparrow = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,11 +73,7 @@ public class CameraActivity extends AppCompatActivity implements Scene.OnUpdateL
     @Override
     public void onUpdate(FrameTime frameTime) {
 
-        Boolean beer = false;
-        Boolean spacestation = false;
-        Boolean cat = false;
-        Boolean dog = false;
-        Boolean sparrow = false;
+
 
         Frame frame = arFragment.getArSceneView().getArFrame();
         Collection<AugmentedImage> images = frame.getUpdatedTrackables(AugmentedImage.class);
