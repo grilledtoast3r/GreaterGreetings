@@ -13,9 +13,6 @@ import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
 import com.example.ggprototype_v2.data.AlarmReminderContract;
 
-/**
- * Created by delaroy on 10/27/17.
- */
 
 public class AlarmCursorAdapter extends CursorAdapter {
 

@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import androidx.appcompat.widget.Toolbar;
 
 
 import com.example.ggprototype_v2.data.AlarmReminderContract;
@@ -23,19 +24,22 @@ public class NotificationActivity extends AppCompatActivity implements LoaderMan
 
 
     //declarations
-    private FloatingActionButton fab;
-    //toolbar not included
+    private FloatingActionButton addReminderFab;
     AlarmCursorAdapter mCursorAdapter;
     AlarmReminderDbHelper alarmReminderDbHelper = new AlarmReminderDbHelper(this);
     ListView reminderListView;
     ProgressDialog progressDialog;
 
+    private static final int VEHICLE_LOADER = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
+
+//        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+//        mToolbar.setTitle(R.string.app_name);
 
         //ListView initialization
         reminderListView = (ListView) findViewById(R.id.list);
@@ -65,21 +69,18 @@ public class NotificationActivity extends AppCompatActivity implements LoaderMan
 
 
         //Tap on list item to edit it. This method opens AddReminderActivity withOUT params
-        fab = (FloatingActionButton) findViewById(R.id.floatingActionButton);
-        fab.setOnClickListener(new View.OnClickListener() {
+        addReminderFab = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+        addReminderFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openAddReminderActivity();
+                Intent intent = new Intent(v.getContext(), AddReminderActivity.class);
+                startActivity(intent);
             }
         });
 
-        //getClassLoader().initLoader(VEHICLE_LOADER, null, this);
+        getLoaderManager().initLoader(VEHICLE_LOADER, null, this);
     }
 
-    private void openAddReminderActivity() {
-        Intent intent = new Intent(this, AddReminderActivity.class);
-        startActivity(intent);
-    }
 
 
     @Override
