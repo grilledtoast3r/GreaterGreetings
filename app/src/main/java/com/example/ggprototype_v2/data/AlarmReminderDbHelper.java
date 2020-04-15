@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class AlarmReminderDbHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "alarmreminder.db";
+    private static final String DATABASE_NAME = "ggprototype_v2.db";
 
     private static final int DATABASE_VERSION = 1;
 

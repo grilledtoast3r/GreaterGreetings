@@ -26,7 +26,7 @@ public class AlarmReminderContract {
         public static final String CONTENT_ITEM_TYPE =
                 ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_VEHICLE;
 
-        public final static String TABLE_NAME = "vehicles";
+        public final static String TABLE_NAME = "events";
 
         public final static String _ID = BaseColumns._ID;
 
